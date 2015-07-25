@@ -1,0 +1,26 @@
+{
+  "name": "ad-bs-browserify",
+  "version": "0.1.0",
+  "description": "Using ad-bs-converter module in client side",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techgaun/ad-bs-browserify"
+  },
+  "keywords": [
+    "bikram-samvat",
+    "nepali-date-converter"
+  ],
+  "author": "Samar Dhwoj Acharya <samar@techgaun.com> (http://samar.techgaun.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techgaun/ad-bs-browserify/issues"
+  },
+  "homepage": "https://github.com/techgaun/ad-bs-browserify",
+  "dependencies": {
+    "ad-bs-converter": "^0.1.0"
+  }
+}
