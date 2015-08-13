@@ -5,3 +5,5 @@ Simple (&amp; silly) example of using ad-bs-converter for browser
 ```bash
 browserify app.js -o bundle.js
 ```
+
+Its now obsolete and requires update (will do asap)
