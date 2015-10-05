@@ -1,14 +1,18 @@
-var adbs = require('ad-bs-converter');
+var adbs = require("ad-bs-converter");
 
 function ad2bsClick(){
-    document.getElementById('bsresult').innerHTML = adbs.ad2bs(document.getElementById('ad').value);
+    var data = adbs.ad2bs(document.getElementById("ad").value);
+    document.getElementById("bsresult").innerHTML = data["ne"]["year"] + "/" +
+        data["ne"]["month"] + "/" + data["ne"]["day"] + " " + data["ne"]["strDayOfWeek"];
 }
 
 function bs2adClick() {
-    document.getElementById('adresult').innerHTML = adbs.bs2ad(document.getElementById('bs').value);
+    var data = adbs.bs2ad(document.getElementById("bs").value);
+    document.getElementById("adresult").innerHTML = data["year"] + "/" +
+        data["month"] + "/" + data["day"] + " " + data["strDayOfWeek"];
 }
 
-var ad2bsbtn = document.getElementById('ad2bsbtn');
-ad2bsbtn.addEventListener('click', ad2bsClick);
-var bs2adbtn = document.getElementById('bs2adbtn');
-bs2adbtn.addEventListener('click', bs2adClick);
+var ad2bsbtn = document.getElementById("ad2bsbtn");
+ad2bsbtn.addEventListener("click", ad2bsClick);
+var bs2adbtn = document.getElementById("bs2adbtn");
+bs2adbtn.addEventListener("click", bs2adClick);
